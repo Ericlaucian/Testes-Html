@@ -1,0 +1,19 @@
+#body{
+    background: rgb(255, 255, 255);
+    height: 100pc;
+    width: 100%;
+}
+.box{
+    flex: 1;
+    background-color: rgb(147, 102, 206);
+    text-align: center;
+    width: 10px;
+    height: 30%;
+}
+.table{
+    display: flex;
+    gap: 3%;
+}
+.input{
+    text-align: center;
+}
