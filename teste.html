@@ -10,32 +10,44 @@
 </head>
 <body id="body">
 
-    <div class="input">
+    <div class="formulario">
         <h6>bota teu nome</h6>
         <input id = "nome" type="text" placeholder="put your name">
         <br>
         <input id="dtNascimento" type="date">
         <br>
-        <select id="opções">
-            <option>Automação</option>
-            <option>TI</option>
-            <option>Mecatronica</option>
-        </select>
-        <br>
         <input id="linkedIn" type="url" placeholder="coloque o lik de seu LinkedIn">
         <br>
 
-        <div>
-            <input type="checkbox" id="TI" value="TI">
+        <div class="table">
+            <div class="input">
+                <input type="checkbox" id="TI" value="TI" onclick="TI()">
+                <br>
+                <label>Ti</label>
+            </div>
+            <div class="input">
+                <input type="checkbox" id="Mecatronica" value="Mecatronica" onclick="Mecatronica()">
+                <br>
+                <label>Mecatronica</label>
+            </div>
+            <div class="input">
+                <input type="checkbox" id="Automacao" value="Automacao" onclick="Automacao()">
+                <br>
+                <label>Automação</label>
+            </div>
+            <div class="input">
+                <input type="checkbox" id="ADM" value="ADM" onclick="ADM()">
+                <br>
+                <label>ADM</label>
+            </div>
         </div> 
-
-
         <br>
-        <button onclick="Enviar()">mostrar</button>
+        <button class="botao" onclick="Enviar()">mostrar</button>
         <p id="print"></p>
     </div>    
 
 </body>
 </html>
 
-<script src="script.js"></script>
+<script src="funcoesTela.js"></script>
+
