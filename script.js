@@ -1,19 +1,27 @@
-function printName(){
-    const nome = document.getElementById("nome").value;
-}
+
+let idade;
+
 
 function calcularIdade(){
     const nascimento = document.getElementById("dtNascimento").value;
 
-    var dtNascimento = new Date(nascimento);
-    var hoje = new Date;
+    let dtNascimento = new Date(nascimento);
+    let hoje = new Date;
 
-    if(hoje.getMonth() >= dtNascimento.getMonth() && hoje.getDay() >= dtNascimento.getDay()){
-        var idade = hoje.getFullYear() - dtNascimento.getFullYear();
+    if(hoje.getMonth() > dtNascimento.getMonth() && hoje.getDay() > dtNascimento.getDay()){
+        idade = hoje.getFullYear() - dtNascimento.getFullYear() - 1;
     } else{
-        var idade = hoje.getFullYear() - dtNascimento.getFullYear() - 1;
+        idade = hoje.getFullYear() - dtNascimento.getFullYear();
     }
 
-    document.getElementById("print").textContent = idade;
-    
+}
+
+function Enviar(){
+    let nome = document.getElementById("nome").value;
+    let linkedIN_url = document.getElementById("linkedIn").value;
+    let curso = document.getElementById("opções").value;
+
+    calcularIdade();
+
+    document.getElementById("print").textContent = nome + linkedIN_url + curso + idade;
 }
