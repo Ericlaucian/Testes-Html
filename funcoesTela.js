@@ -67,5 +67,12 @@ function ADM(){
     document.getElementById("print").textContent = cursos;
 }
 
+function fotoDePerfil(event){
+    let foto = document.getElementById('foto-de-perfil');
+    foto.scr = URL.createObjectURL(event.target.files[0]);
+    foto.style.display = 'block';
+}
+
+
 
 
