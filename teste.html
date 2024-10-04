@@ -11,36 +11,63 @@
 <body id="body">
 
     <div class="formulario">
-        <h6>bota teu nome</h6>
-        <input id = "nome" type="text" placeholder="put your name">
-        <br>
-        <input id="dtNascimento" type="date">
-        <br>
-        <input id="linkedIn" type="url" placeholder="coloque o lik de seu LinkedIn">
-        <br>
+        <div class="photo-box">
+            <form>
+                <input type="file" id="fotodeperfil" name="fotodeperfil" accept="image/*" onchange="fotoDePerfil(event)">
+            </form>
 
-        <div class="table">
-            <div class="input">
-                <input type="checkbox" id="TI" value="TI" onclick="TI()">
-                <br>
-                <label>Ti</label>
+            <img id="foto-de-perfil" src="">
+        </div>
+
+        
+
+        <div class="side-Out">
+            <div class="box">
+                <div class="inner-box">
+                    <h4>bota teu nome</h4>
+                    <div class="divs-pessoais">
+                        <label class="info-pessoais-label">Nome Completo</label>
+                        <input id = "nome" type="text" placeholder="put your name">
+                    </div>
+                    <br>
+                    <div class="divs-pessoais">
+                        <label class="info-pessoais-label">Data de Nascimento</label>
+                        <input id="dtNascimento" type="date">
+                    </div>
+                    <br>
+                    <div class="divs-pessoais">
+                        <label class="info-pessoais-label">LinkedIn</label>
+                        <input id="linkedIn" type="url" placeholder="link do seu perfil">
+                    </div>
+                    
+                </div>
             </div>
-            <div class="input">
-                <input type="checkbox" id="Mecatronica" value="Mecatronica" onclick="Mecatronica()">
-                <br>
-                <label>Mecatronica</label>
-            </div>
-            <div class="input">
-                <input type="checkbox" id="Automacao" value="Automacao" onclick="Automacao()">
-                <br>
-                <label>Automação</label>
-            </div>
-            <div class="input">
-                <input type="checkbox" id="ADM" value="ADM" onclick="ADM()">
-                <br>
-                <label>ADM</label>
-            </div>
-        </div> 
+
+            <!-- Opções de curso -->
+    
+            <div class="table">
+                <div class="cursos">
+                    <div class="input">
+                        <input type="checkbox" id="TI" value="TI" onclick="TI()">
+                        <label>Ti</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" id="Mecatronica" value="Mecatronica" onclick="Mecatronica()">
+                        <label>Mecatronica</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" id="Automacao" value="Automacao" onclick="Automacao()">
+                        <label>Automação</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" id="ADM" value="ADM" onclick="ADM()">
+                        <label>ADM</label>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        
         <br>
         <button class="botao" onclick="Enviar()">mostrar</button>
         <p id="print"></p>
@@ -50,4 +77,5 @@
 </html>
 
 <script src="funcoesTela.js"></script>
+
 
