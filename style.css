@@ -3,24 +3,44 @@
     height: 100pc;
     width: 100%;
 }
+#foto-de-perfil{
+    border-radius: 50%;
+    border: 1px;
+    height: 100px;
+    width: 100px;
+    
+}
 .box{
-    flex: 1;
-    background-color: rgb(147, 102, 206);
-    text-align: center;
-    width: 10px;
+    text-align: left;
+    width: 55%;
+    border: 1px solid black;
+    border-radius: 2%;
+}
+.inner-box{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+.photo-box{
+    display: flex;
+    align-items: center;
+    gap: 10%;
     height: 30%;
 }
 .table{
     width: 50%;
-    justify-content: center;
-    display: flex;
+    justify-content: left;
     gap: 1%;
     border: 1px solid black;
-    border-radius: 2%;
+    border-radius: 5%;
+}
+.cursos{
+    width: 50%;
     margin: 0 auto;
+    margin-top: 10%;
 }
 .input{
-    text-align: center;
+    text-align: left;
 }
 .formulario{
     height: 60%;
@@ -42,4 +62,18 @@
 }
 .botao:hover{
     background-color: aqua;
+}
+.side-Out{
+    height: 30%;
+    border: 2px solid black;
+    border-radius: 2%;
+    display: flex;
+    gap: 20%;
+}
+.info-pessoais-label{
+    color: rgb(159, 117, 238);
+}
+.divs-pessoais{
+    display: flex;
+    gap: 2%;
 }
