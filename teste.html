@@ -12,14 +12,14 @@
 
     <div class="formulario">
         <div class="photo-box">
-            <form>
-                <input type="file" id="fotodeperfil" name="fotodeperfil" accept="image/*" onchange="fotoDePerfil(event)">
+            <form class="input-img">
+                <label for="fotoPerfil">Escolha uma foto de perfil:</label><br><br>
+                <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*" onchange="fotoDePerfil(event)">
             </form>
 
-            <img id="foto-de-perfil" src="">
+            <img id="fotoperfil" src="">
         </div>
 
-        
 
         <div class="side-Out">
             <div class="box">
@@ -69,7 +69,7 @@
 
         
         <br>
-        <button class="botao" onclick="Enviar()">mostrar</button>
+        <a href="perfil.html" onclick="Enviar()">concluido</a>
         <p id="print"></p>
     </div>    
 
@@ -77,5 +77,4 @@
 </html>
 
 <script src="funcoesTela.js"></script>
-
 
