@@ -68,11 +68,13 @@ function ADM(){
 }
 
 function fotoDePerfil(event){
-    let foto = document.getElementById('foto-de-perfil');
-    foto.scr = URL.createObjectURL(event.target.files[0]);
+    var foto = document.getElementById("fotoperfil");
+    foto.src = URL.createObjectURL(event.target.files[0]);
     foto.style.display = 'block';
 }
 
-
-
-
+function previewImage(event) {
+    var preview = document.getElementById('preview');
+    preview.src = URL.createObjectURL(event.target.files[0]);
+    preview.style.display = 'block';
+}
