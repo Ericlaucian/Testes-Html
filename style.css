@@ -3,11 +3,12 @@
     height: 100pc;
     width: 100%;
 }
-#foto-de-perfil{
+#fotoperfil{
     border-radius: 50%;
     border: 1px;
     height: 100px;
     width: 100px;
+    display: none;
     
 }
 .box{
@@ -21,11 +22,17 @@
     text-align: left;
     margin: 0 auto;
 }
+.input-img{
+    align-items: center;
+    width: 80%;
+    border: 2px solid black;
+}
 .photo-box{
     display: flex;
     align-items: center;
-    gap: 10%;
+    gap: 3%;
     height: 30%;
+    border: 2px solid black;
 }
 .table{
     width: 50%;
@@ -76,4 +83,39 @@
 .divs-pessoais{
     display: flex;
     gap: 2%;
+}
+.menu{
+    padding: 3%;
+    background-color: rgb(158, 92, 149);
+    box-shadow: 0 16px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 0;
+}
+.abas{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+}
+.abas a {
+    color: rgb(255, 177, 245);
+}
+.logo-nome{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    height: 100px;
+}
+.foto-info-perfil{
+    display: flex;
+
+}
+.foto-perfil{
+    border-radius: 50%;
+    padding: 5%;
+    
 }
