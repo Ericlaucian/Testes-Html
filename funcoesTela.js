@@ -78,3 +78,33 @@ function previewImage(event) {
     preview.src = URL.createObjectURL(event.target.files[0]);
     preview.style.display = 'block';
 }
+
+function otherPagePhoto(event){
+    let photo = event.target.files[0];
+    let reader = new FileReader();
+
+    reader.onload = function(e){
+        let photo1 = document.getElementById("fotoperfil");
+        photo1.src = e.target.result;
+        photo1.style.display = "block";
+        
+        localStorage.setItem("fotoPerfil" , e.target.files);
+    }
+
+    if(photo){
+        reader.readAsDataURL(photo);
+    }
+}
+
+function mudaPagina_login_perfil(){
+    window.location.href = "perfil";
+}
+
+window.onload = function(){
+    let foto = document.getElementById("fotoPerfil")
+    if(foto && localStorage.getItem("fotoPerfil")){
+        document.getElementById("fotoPerfil").src = foto;
+    }
+}
+
+
